@@ -37,7 +37,7 @@ const auth = new google.auth.GoogleAuth({
 const sheets = google.sheets({ version: 'v4', auth });
 
 // Form submission endpoint
-app.post('/api/submit-form', async (req, res) => {
+app.post('/submit', async (req, res) => {
   const formData = req.body;
   console.log('Received form data:', formData); // Debug log
   
